@@ -11,7 +11,7 @@ def load_agent(agent_name):
     Example: load_agent('my_agent') imports agents/my_agent.py and returns MyAgent class.
     """
     # Use the corrected import path
-    module = importlib.import_module(f"blackhole_core.agents.{agent_name}")  # Removed blackhole_core prefix
+    module = importlib.import_module(f"blackhole_core.agents.{agent_name}")  
     class_name = ''.join([part.capitalize() for part in agent_name.split('_')])
     return getattr(module, class_name)
 
@@ -21,17 +21,3 @@ if __name__ == "__main__":
     agent = AgentClass(memory=[], source="api")
     print(agent)
 
-
-# import importlib
-
-# def load_agent(agent_name):
-#     module = importlib.import_module(f"agents.{agent_name}")
-#     class_name = ''.join([part.capitalize() for part in agent_name.split('_')])
-
-#     return getattr(module, class_name)
-
-# # Example test
-# if __name__ == "__main__":
-#     AgentClass = load_agent('my_agent')
-#     agent = AgentClass(memory=[], source="api")
-#     print(agent)

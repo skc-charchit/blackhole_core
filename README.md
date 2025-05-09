@@ -19,4 +19,6 @@ This project sets up the foundational architecture for the Blackhole SLM/Multimo
 1. utils
 2. config
 
+### Initial Logs:
+Day 1: Base model runs successfully.
 

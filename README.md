@@ -1,4 +1,4 @@
-# BlackHole Core MCP
+# BlackHole Core MCP(Model Context Protocol)
 
 This project sets up the foundational architecture for the Blackhole SLM/Multimodal core --- agent-ready.
 

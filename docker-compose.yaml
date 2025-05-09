@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  blackhole_core:
+    build: .
+    container_name: blackhole_core
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: bash

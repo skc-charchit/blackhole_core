@@ -1,1 +1,11 @@
 pymongo[srv]
+requests
+pandas
+fitz
+pillow 
+pytesseract
+pymupdf
+transformers 
+accelerate 
+torch
+python-dotenv
